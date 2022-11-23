@@ -9,16 +9,16 @@
 <body>
     <script>
         console.log("Hello");
-        var hi = document.getElementbyId("hli").value;
-        var gp = document.getElementbyId("gp").value;
-        var hra = document.getElementbyId("hra").value;
+        var hi = document.getElementById("hli").value;
+        var gp = document.getElementById("gp").value;
+        var hra = document.getElementById("hra").value;
         
-        const arr=['epf','lic','ppf','fd','hpa']
+        const arr=['epf','lic','ppf','fd','hpa'];
         var ded=0;
         for(var i=0;i<arr.length();i++){
-            ded+=document.getElementbyId(arr[i]).value
+            ded+=document.getElementById(arr[i]).value
         }
-        var mi = document.getElementbyId("mi").value; 
+        var mi = document.getElementById("mi").value; 
         var yob=document.getElementById('yob').value;
         var tax = 0;
         function validation()
