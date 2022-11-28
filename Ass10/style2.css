@@ -1,0 +1,117 @@
+.username
+{
+    text-align: right;
+}
+
+.contentbody
+{
+    margin: 10px 10% 20px 10%; 
+    padding: 10px 5% 20px 5%;
+    background-color: rgb(206, 249, 209);
+    
+}
+.loginbody
+{
+    margin: 10px 25% 20px 25%;
+    padding: 10px 5% 10px 5%;
+    background-color: rgb(206, 249, 209);
+    
+}
+.addemppage
+{
+    margin: 10px 25% 20px 25%;
+    padding: 10px 5% 10px 5%;
+    background-color: rgb(206, 249, 209);
+    
+}
+.empbody
+{
+    padding: 0% 25% 0% 25%;
+}
+tbody tr td 
+{
+    width: auto;
+}
+thead tr td 
+{
+    width: auto;
+}
+input:not([type=radio])
+{
+    height: 25px;
+    width: 150px;
+}
+input[type=radio]
+{
+    height: 25px;
+    vertical-align:sub;
+}
+.heading
+{
+    border: 2px;
+    border-style: solid;
+    border-color: orange;
+    text-align: center;
+    border-radius: 5px;
+}
+.subhead1
+{
+    font-size: 18px;
+    color: darkblue;
+  
+}
+.subhead2
+{
+    font-size: 18px;
+    color: rgb(178, 33, 23);
+  
+}
+.bold
+{
+    font-weight: bold;
+}
+.orangebox
+{
+    border: 2px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 5px;
+}
+
+
+.greenbox
+{
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 5px;
+}
+.column1
+{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  
+}
+.column2
+{
+    text-align: center;
+    vertical-align:middle;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table
+{
+    width: 100%;
+}
+tr
+{
+    width: 100%;
+}
+td
+{
+    width: 50%;
+}
