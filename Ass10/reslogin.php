@@ -22,20 +22,18 @@
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
-      $myusername = mysqli_real_escape_string($db,$_POST['uname']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['pwd']); 
+      $myusername = $_POST['uname'];
+      $mypassword = $_POST['pwd']; 
       $sql = "SELECT uname FROM loig WHERE uname = '$myusername' and pwd = '$mypassword'";
       $result = mysqli_query($db,$sql);      
       $count = mysqli_num_rows($result);
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
-      if($count == 2) {
+      if($count == 1) {
          //session_register("myusername");
          $_SESSION['uname'] = $myusername;
          $_SESSION['pwd'] = $mypassword;
-
-         
          header("location: Home.php");
       }else {
          $error = "Your Login Name or Password is invalid";
