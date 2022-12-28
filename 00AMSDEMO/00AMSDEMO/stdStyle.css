@@ -1,0 +1,112 @@
+.contentbody
+{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(27, 38, 243);
+    border-radius: 5px;
+
+    margin: 10px 25% 20px 25%;
+    padding: 10px 5% 10px 5%;
+
+    background-color: rgb(206, 249, 209);
+
+    font-size: 18px;
+    color: rgb(116, 5, 50);
+}
+
+.viewbody
+{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(27, 38, 243);
+    border-radius: 5px;
+
+    margin: 10px 10% 20px 10%; 
+    padding: 10px 5% 20px 5%;
+    
+    background-color: rgb(206, 249, 209);
+    
+    font-size: 18px;
+    color: rgb(116, 5, 50);
+}
+
+.title
+{
+    font-size: 22px;
+    color: rgb(106, 9, 48);
+    text-align: center;
+    font-weight: 600;
+}
+
+.orangebox
+{
+    border: 2px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 5px;
+}
+.greenbox
+{
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 5px;
+}
+.column1
+{
+    text-align: left;
+    vertical-align:middle;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: darkblue;
+    font-size: 16px;
+}
+.column2
+{
+    text-align: center;
+    vertical-align:middle;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+table
+{
+ 
+   width: 100%;
+ 
+}
+tr
+{
+    width: 100%;
+}
+td
+{
+    width: 50%;
+}
+
+tbody tr td 
+{
+    width: auto;
+    color: rgb(21, 116, 176);
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+thead tr th 
+{
+    width: auto;
+    color: rgb(160, 18, 96);
+    
+}
+
+.viewtable
+{
+    border: 1px;
+    border-collapse: collapse;
+    border-style: solid;
+}

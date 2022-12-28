@@ -1,0 +1,26 @@
+PHP funtions for MySQL Queries
+****************************
+	1. mysqli_query($db, $sql) 
+		- For Executing a Query
+		- $db - database connection pointer
+		- $sql - Query string
+		- for 'select' query - returns a table
+		- for 'update' and 'delete' query - returns the number of rows affected
+		- for 'insert' query - returns true or false
+	
+		
+	2. $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE) - For making connection between php and mysql database
+		- DB_SERVER - server name where the database is available - ip address or machine name - for local machine - 'localhost' or '127.0.0.1'
+		- DB_USERNAME - mysql database user name - default is 'root'
+		- DB_PASSWORD - default is empty string
+		- DB_DATABASE - database name
+		
+	3. mysqli_num_rows($res) - To obtain the number of rows in the table $res.
+
+    4. session_start() - To access the SESSION variables
+
+    5. header("Location: a.php") - To redirect the page
+
+    6. mysqli_fetch_array($res) - To obtaining the current row from the table $res
+		
+		

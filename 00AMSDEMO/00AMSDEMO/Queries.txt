@@ -1,0 +1,42 @@
+CREATE DATABASE amsdemo; 
+
+
+CREATE TABLE Customer (
+     CustomerId INT NOT NULL AUTO_INCREMENT,
+     CustomerName VARCHAR(50) NOT NULL,
+     CustomerAddress VARCHAR(50) NOT NULL,
+     ContactNumber VARCHAR(15) NOT NULL,
+     PRIMARY KEY (CustomerId)
+)AUTO_INCREMENT=1000;
+
+INSERT INTO Customer (CustomerName, CustomerAddress, ContactNumber) VALUES ('C1', 'ADDRESS1', '9898989898');
+INSERT INTO Customer VALUES ('', 'C2', 'ADDRESS2', '9898989891');
+
+CREATE TABLE Branch (
+     BranchId INT NOT NULL AUTO_INCREMENT,
+     BranchName VARCHAR(50) NOT NULL,
+     BranchAddress VARCHAR(50) NOT NULL,
+     PRIMARY KEY (BranchId)
+)AUTO_INCREMENT=200;
+ 
+INSERT INTO branch(BranchName,BranchAddress) VALUES('B3','BADDR3');
+INSERT INTO branch(BranchName,BranchAddress) VALUES('B4','BADDR4');
+INSERT INTO branch(BranchName,BranchAddress) VALUES('B5','BADDR5');
+
+
+ CREATE TABLE Account (
+     AccountId INT NOT NULL AUTO_INCREMENT,
+     CustomerId INT NOT NULL,
+     AccountType VARCHAR(50) NOT NULL,
+	 Balance FLOAT NOT NULL DEFAULT 0.0,
+	 BranchId INT NOT NULL,
+	 Privilege VARCHAR(50) NOT NULL,
+     PRIMARY KEY (AccountId),
+	 FOREIGN KEY (CustomerId) REFERENCES Customer(CustomerId),
+	 FOREIGN KEY (BranchId) REFERENCES Branch(BranchId)
+)AUTO_INCREMENT=2000;
+
+
+
+
+select x.CustomerId, y.CustomerName, x.AccountType, x.Balance, x.Privilege from Account x, Customer y where x.CustomerId=y.CustomerId and x.BranchId='200' and x.AccountType='Savings'; 
