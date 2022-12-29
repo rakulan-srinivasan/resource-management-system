@@ -34,7 +34,7 @@
                     $query = "INSERT INTO account VALUES('', '$cid', '$branch', '$acc_type', '$balance', '$priv');";
                     $res = mysqli_query($db, $query);
                     if ($res >= 1){
-                    echo '<script>alert("Success!");</script>';
+                        echo '<script>alert("Success!");</script>';
                     }
                     else{
                         echo '<script>alert("Failure!");</script>';

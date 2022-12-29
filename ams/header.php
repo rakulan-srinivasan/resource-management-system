@@ -7,6 +7,7 @@
     <title>AMS Home</title>
 </head>
 <body>
+    <center><h1>Account Management System</h1></center>
     <hr>
     <table>
         <tr>
