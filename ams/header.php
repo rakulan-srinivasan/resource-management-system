@@ -7,16 +7,23 @@
     <title>AMS Home</title>
 </head>
 <body>
+    <?php
+        session_start();
+    ?>
     <center><h1>Account Management System</h1></center>
     <hr>
     <table>
         <tr>
-        <td><a href='home.php'>Home |</a></td>
-        <td><a href='add_account.php'>Add Account |</a></td>
-        <td><a href='view_account.php'>View Account |</a></td>
-        <td><a href='update_customer.php'> Update Customer</a></td>
-    </tr>
+            <td><a href='home.php'>Home |</a></td>
+            <td><a href='add_account.php'>Add Account |</a></td>
+            <td><a href='view_account.php'>View Account |</a></td>
+            <td><a href='update_customer.php'> Update Customer</a></td>
+        </tr>
     </table>
+    <div align='right'>
+        <?php echo $_SESSION['uname']; ?>, 
+        <a href='logout.php'>Logout</a>
+    </div>
     <hr>
     </body>
 </html>

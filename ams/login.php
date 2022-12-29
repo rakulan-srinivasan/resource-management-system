@@ -7,6 +7,8 @@
     <title>AMS Login</title>
 </head>
 <body>
+<center><h1>Account Management System</h1></center>
+<hr>
     <?php
         include 'dbconfig.php';
         session_start();
@@ -42,5 +44,8 @@
     </form>
     </fieldset>
 </center>
+<?php
+    include 'footer.php';
+?>
 </body>
 </html>

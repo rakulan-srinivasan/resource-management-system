@@ -107,5 +107,8 @@
         </fieldset>
     </center>
     </div>
+    <?php
+        include 'footer.php';
+    ?>
 </body>
 </html>

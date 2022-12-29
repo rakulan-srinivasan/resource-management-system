@@ -67,12 +67,12 @@
                             </tr>
                         </table>
                         <p><input type='submit' name='edit' value='Confirm Edit'></p>
+                        <p><input type='submit' name='delete' value='Delete'></p>
                     </form>
                 </fieldset>
                 </center>
                 <?php
                 }
-                echo "0";
             }
             else if (isset($_POST['edit'])){
                 if (isset($_POST["cid"]))
@@ -116,7 +116,20 @@
             <?php
                 }
             }
+            else if (isset($_POST['delete'])){
+                if (isset($_POST['cid'])){
+                    $cid = $_POST['cid'];
+                    $del_query1 = "DELETE FROM customer WHERE CustomerId = '$cid';";
+                    $del_query2 = "DELETE FROM account WHERE CustomerId = '$cid';";
+                    $res = mysqli_query($db, $del_query2);
+                    $res = mysqli_query($db, $del_query1);
+                    echo "<script>alert('Thookiyaachu!);</script>";
+                }
+            }
         }
+    ?>
+    <?php
+        include 'footer.php';
     ?>
 </body>
 </html>
